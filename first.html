@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>首頁 - 我的MC伺服器</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background: #111;
+            margin: 0; 
+        }
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background: #222;
+            padding: 0 40px;
+            height: 60px;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 32px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.2s;
+        }
+        .navbar a:hover {
+            color: #4c9eeb;
+        }
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 320px;
+            background: url('your-banner.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .banner-text {
+            position: absolute;
+            color: #fff;
+            text-align: center;
+            text-shadow: 2px 2px 8px #000;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .banner-text h2 {
+            font-size: 2.2em;
+            margin: 0 0 10px 0;
+        }
+        .banner-text h1 {
+            font-size: 3em;
+            margin: 0;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .banner-text .author {
+            margin-top: 18px;
+            font-size: 1.1em;
+            color: #4c9eeb;
+            letter-spacing: 1px;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 32px;
+            margin: 48px 0;
+        }
+        .feature {
+            background: none;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 24px 18px;
+            width: 220px;
+            text-align: center;
+        }
+        .feature img {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 12px;
+        }
+        .feature-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #4c9eeb;
+        }
+        .feature-desc {
+            color: #eee;
+            font-size: 0.98em;
+        }
+        .footer {
+            background: #ffffff;
+            color: #000000;
+            text-align: center;
+            padding: 28px 10px 20px 10px;
+            margin-top: 60px;
+        }
+        .footer-title {
+            font-size: 1.25em;
+            margin-bottom: 16px;
+            letter-spacing: 2px;
+        }
+        .partners {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 32px;
+            margin-bottom: 10px;
+        }
+        .partner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 120px;
+        }
+        .partner img {
+            background: none;
+            border: none;
+            display: block;
+            border-radius: 0;
+            margin-bottom: 8px;
+        }
+        .partner img.amd {
+            width: 290px;
+            height: 160px;
+        }
+        .partner img:not(.amd) {
+            width: 200px;
+            height: 190px;
+        }
+        .partner-name {
+            color: #ffd600;
+            font-size: 1.05em;
+            margin-top: 2px;
+        }
+        @media (max-width: 700px) {
+            .features { flex-direction: column; align-items: center; }
+            .partners { flex-direction: column; gap: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="first.html">首頁</a>
+        <a href="about.html">關於</a>
+        <a href="rule.html">規則</a>
+        <a href="mc_server_info.html">伺服器資訊</a>
+    </div>
+    <div class="banner">
+        <div class="banner-text">
+            <h2>Minecraft 插件伺服器</h2>
+            <h1>廢崖插件生存伺服器</h1>
+            <div class="author">由IAMASB_TW建造</div>
+        </div>
+    </div>
+    <div class="features">
+        <div class="feature">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCysCSlMafwaC2K65Ok7D6N7-he0PlS_cDZg&s" alt="自動化管理">
+            <div class="feature-title">伺服器自動化</div>
+            <div class="feature-desc">無須指令，自動保護。中文化介面，權限自動保護。</div>
+        </div>
+        <div class="feature">
+            <img src="https://zh.minecraft.wiki/images/Bedrock_JE2_BE2.png?13f82" alt="穩定">
+            <div class="feature-title">穩定運行</div>
+            <div class="feature-desc">伺服器隨時備份，前所未有的順暢與安心。</div>
+        </div>
+        <div class="feature">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlDWP_sR00zmqr5qHTv-M6eWeLdHLVb786XQ&s" alt="地圖生成">
+            <div class="feature-title">模組生成地圖</div>
+            <div class="feature-desc">前所未有的震撼，探索無限可能。</div>
+        </div>
+        <div class="feature">
+            <img src="https://zh.minecraft.wiki/images/thumb/Diamond_Pickaxe_JE3_BE3.png/150px-Diamond_Pickaxe_JE3_BE3.png?40f8b" alt="防透視採集">
+            <div class="feature-title">防開掛透視採集</div>
+            <div class="feature-desc">自動檢測玩家，杜絕透視挖礦。</div>
+        </div>
+        <div class="feature">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNBYN3nx-QYq0m10VcF1AA60GgRxszyQQFMQ&s" alt="PVP">
+            <div class="feature-title">PVP戰鬥系統</div>
+            <div class="feature-desc">公平競技，無裝備差距，純技術對決。</div>
+        </div>
+        <div class="feature">
+            <img src="https://zh.minecraft.wiki/images/Emerald_JE3_BE3.png?e2a41" alt="經濟系統">
+            <div class="feature-title">完善經濟循環</div>
+            <div class="feature-desc">多元交易，市場繁榮，成為遊戲富豪。</div>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="banner-text">
+            <h2>Minecraft IP</h2>
+            <h2>現在就加入我們!</h2>
+            <h1>mc.feiaya.com</h1>
+        </div>
+    </div>
+    <div class="footer">
+        <h1>曾與我們合作</h1>
+        <div class="partners">
+            <div class="partner">
+                <img class="amd" src="https://upload.wikimedia.org/wikipedia/commons/0/0e/AMD_Radeon_logo_2019.webp" alt="AMD Radeon™ HD 7770">
+                
+            </div>
+            <div class="partner">
+                <img src="https://images.seeklogo.com/logo-png/38/2/intel-new-2020-logo-png_seeklogo-386226.png" alt="合作商B">
+                
+            </div>
+            <div class="partner">
+                <img src="https://press.asus.com/assets/w_4035,h_3474/9c932348-92e9-4450-88a0-2b22bb1d63ca/ROG-logo-black.png" alt="合作商C">
+                
+            </div>
+            <div class="partner">
+                <img src="https://ntucace.ntu.edu.tw/institution/download.logo/sn/88/key/202404241606046628bd6c449e6/preview/1" alt="合作商D">
+                
+            </div>
+            <div class="partner">
+                <img src="https://cdn.cybassets.com/media/W1siZiIsIjMxMzM2L2F0dGFjaGVkX3Bob3Rvcy8xNzM0NDI5MTkzX19zRV84OTY4MzczOTMwLmpwZy5qcGVnIl1d.jpeg?sha=53f0cefbfdb7c431" alt="合作商E">
+                
+            </div>
+            <div class="partner">
+                <img src="https://s.yimg.com/ny/api/res/1.2/MnHhooGdD0MfMfqqigBwhg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://media.zenfs.com/zh-Hant-TW/homerun/twtech.app01.com/3271970ea36090455bbc8c6e2c2e82cf" alt="合作商F">
+                
+            </div>
+            <div class="partner">
+                <img src="https://thumbs.dreamstime.com/b/minecraft-game-d-vector-logo-illustration-isolated-white-transparent-banner-background-can-be-used-earth-square-pixels-164066930.jpg" alt="合作商G">
+            </div>
+            <!-- 你可以繼續新增合作商，或更換圖片與名稱 -->
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>伺服器資訊 - 我的MC伺服器</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background: #111; 
+            margin: 0; 
+            color: #eee;
+            font-size: 1.25em;
+        }
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background: #222;
+            padding: 0 40px;
+            height: 60px;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 32px;
+            font-weight: bold;
+            font-size: 1.15em;
+            transition: color 0.2s;
+        }
+        .navbar a:hover {
+            color: #ffd600;
+        }
+        .main-content {
+            max-width: 700px;
+            margin: 48px auto 0 auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+            color: #ffd600;
+            margin-top: 0;
+            margin-bottom: 32px;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+        .info-list {
+            font-size: 1.18em;
+            line-height: 2.1;
+            margin-bottom: 36px;
+            padding: 0 10px;
+            text-align: left; /* 靠左 */
+        }
+        .info-list strong {
+            color: #ffd600;
+            text-align: left;
+        }
+        .spec-title {
+            color: #ffd600;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            font-size: 1.35em;
+            text-align: left; /* 靠左 */
+            letter-spacing: 1px;
+        }
+        .spec-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto 24px auto;
+            max-width: 400px;
+            text-align: left; /* 靠左 */
+            font-size: 1.13em;
+        }
+        .spec-list li {
+            margin-bottom: 14px;
+            border-bottom: 1px solid #222;
+            padding-bottom: 10px;
+        }
+        @media (max-width: 600px) {
+            .main-content { padding: 0 5px; }
+            h1 { font-size: 1.5em; }
+            .spec-list { max-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="first.html">首頁</a>
+        <a href="about.html">關於</a>
+        <a href="rule.html">規則</a>
+        <a href="mc_server_info.html">伺服器資訊</a>
+    </div>
+    <div class="main-content">
+        <h1>伺服器資訊</h1>
+        <div class="info-list">
+            <div><strong>伺服器IP：</strong> mc.feiaya.com</div>
+            <div><strong>支援版本：</strong> 1.21.8</div>
+            <div><strong>開服時間：</strong> 每天凌晨1點至3點進行停服維修</div>
+            <div><strong>伺服器位置：</strong> 台灣,桃園</div>
+            <div><strong>特色：</strong> 生存、經濟、PVP、地圖探索、防作弊</div>
+            <div><strong>管理團隊：</strong> IAMASB_TW 及管理群</div>
+            <div><strong>Discord：</strong> <a href="https://discord.gg/your-link" target="_blank" style="color:#4c9eeb;">點我加入</a></div>
+        </div>
+        <div class="spec-title">主機配備</div>
+        <ul class="spec-list">
+            <li><strong>CPU：</strong> Intel Core i5 4430 (4核4緒)</li>
+            <li><strong>記憶體：</strong> 16GB DDR4 ECC</li>
+            <li><strong>儲存：</strong> 1TB NVMe SSD</li>
+            <li><strong>網路：</strong> 2.5Gbps 專線</li>
+            <li><strong>作業系統：</strong> Windows 10 pro 1909</li>
+            <li><strong>每日自動備份：</strong> 是</li>
+        </ul>
+    </div>
+</body>
+</html>
